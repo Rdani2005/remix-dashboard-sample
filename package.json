@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "remix-dashboard-sample",
+  "version": "0.0.0",
+  "description": "Proof of concept using Remix",
+  "type": "module",
+  "license": "Unlicense",
+  "author": "Rdani2005",
+  "scripts": {},
+  "keywords": []
+}
