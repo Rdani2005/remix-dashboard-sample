@@ -6,6 +6,28 @@
   "type": "module",
   "license": "Unlicense",
   "author": "Rdani2005",
-  "scripts": {},
-  "keywords": []
+  "scripts": {
+    "storybook": "npm run --filter @devtools/storybook start",
+    "test": "npm run --recursive test",
+    "typecheck": "npm run --recursive typecheck",
+    "format": "npm run prettier .",
+    "lint": "npm run eslint \"**/*.{js,cjs,mjs,jsx,ts,tsx}\"",
+    "eslint": "eslint --ignore-path .gitignore --max-warnings 0",
+    "prettier": "prettier --ignore-path .gitignore --write",
+    "prepare": "husky",
+    "pre-commit": "lint-staged"
+  },
+  "devDependencies": {
+    "@tsconfig/vite-react": "^3.0.0",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "workspaces": [
+    "devtools/*",
+    "packages/*"
+  ]
 }
