@@ -1,7 +1,7 @@
 import { type MouseEventHandler } from "react";
 
-export interface ButtonProps {
-  outline?: boolean;
+export interface AlertProps {
+  dismisable?: boolean;
   color?:
     | "white"
     | "primary"
@@ -11,7 +11,8 @@ export interface ButtonProps {
     | "warning"
     | "danger"
     | "dark";
-  label: string;
+  title: string;
+  description: string;
   icon?: JSX.Element;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onExit?: MouseEventHandler<HTMLButtonElement>;
 }
