@@ -4,10 +4,6 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "scripts": {
-    "typecheck": "tsc --noEmit",
-    "test": "vitest --passWithNoTests"
-  },
   "devDependencies": {
     "@total-typescript/ts-reset": "^0.5.1",
     "@tsconfig/node20": "^20.1.2",
