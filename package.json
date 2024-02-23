@@ -29,5 +29,14 @@
   "workspaces": [
     "devtools/*",
     "packages/*"
-  ]
+  ],
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts,jsx,tsx}": [
+      "npm run prettier",
+      "npm run eslint"
+    ],
+    "*.{json,md}": [
+      "npm run prettier"
+    ]
+  }
 }
