@@ -1,9 +1,16 @@
 import { type Preview } from "@storybook/react";
 
-import "@dashboard-sample/styles/src/_init.scss";
-import "@dashboard-sample/styles/src/plugins.scss";
-import "@dashboard-sample/styles/src/style.react.scss";
-import "@dashboard-sample/styles/src/style.scss";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+
+import "@dashboard-sample/styles/src/fonticon/fonticon.css";
+import "@dashboard-sample/styles/src/keenicons/duotone/style.css";
+import "@dashboard-sample/styles/src/keenicons/outline/style.css";
+import "@dashboard-sample/styles/src/keenicons/solid/style.css";
+
+import "@dashboard-sample/styles/src/sass/style.scss";
+import "@dashboard-sample/styles/src/sass/plugins.scss";
+import "@dashboard-sample/styles/src/sass/style.react.scss";
 
 const preview = {
     parameters: {

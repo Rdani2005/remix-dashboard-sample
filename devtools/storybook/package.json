@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "start": "storybook dev -c src/config -p 6006",
+        "start": "storybook dev -c src/config  -p 6006",
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {

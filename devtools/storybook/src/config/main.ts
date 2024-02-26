@@ -46,7 +46,10 @@ const config = {
     },
     stories: [
         ...getStoriesSourceFrom(STORYBOOK_PACKAGE_ROOT),
-        ...getStoriesSourceFrom("@dashboard-sample/ui"),
+        // ! This line is commented out to avoid loading the stories from the ui package. This should be uncommented when discover how to solve the src/config error.
+        // ! ERROR adding src/config before every path
+        // ...getStoriesSourceFrom("@dashboard-sample/ui"),
+        "../../../../packages/ui/src/**/*.stories.@(js|jsx|mjs|ts|tsx)", // ? This line is added to load the stories from the ui package. Is a temporary solution.
     ],
     addons: [
         getAbsolutePathFor("@storybook/addon-links"),
